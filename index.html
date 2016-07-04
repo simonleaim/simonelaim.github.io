@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Code Review-Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>THE CODE REVIEW</h1>
+    </header>
+    
+    <form action="index.html" method="post">
+       
+        <h2>Signup for our newsletter</h2>
+        
+        <p id="intro">Get the latest news on how your code is doing right in your inbox</p>
+        <div class="border-top">
+        <fieldset id="contact_info">
+            
+            <legend>Contact Information</legend>
+            
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Required" required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="FirstName LastName">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email" placeholder="Required" required aria-required="true" >
+            
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="user_number" placeholder="+xx xxx xxx xxx" >
+            
+            <label for="street">Street Address</label>
+            <input type="text" id="street" name="user_street">
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+            
+            <label for="state">State</label>
+            <div class="styled-select">
+            <select id="state" name="user_state">
+                <optgroup label="West Malaysia">
+                    <option value="Selangor">Selangor</option>
+                    <option value="Johor">Johor</option>
+                    <option value="Perak">Perak</option>
+                    <option value="Kedah">Kedah</option>
+                    <option value="Kuala Lumpur">Kuala Lumpur</option>
+                    <option value="Kelantan">Kelantan</option>
+                    <option value="Penang">Penang</option>
+                    <option value="Pahang">Pahang</option>
+                    <option value="Terengganu">Terengganu</option>
+                    <option value="Negeri Sembilan">Negeri Sembilan</option>
+                    <option value="Malacca">Malacca</option>
+                    <option value="Perlis">Perlis</option>
+                    <option value="Putrajaya">Putrajaya</option>
+                </optgroup>
+                <optgroup label="East Malaysia">
+                    <option value="Sabah">Sabah</option>
+                    <option value="Sarawak">Sarawak</option>
+                    <option value="Labuan">Labuan</option>
+                </optgroup>
+            </select>
+            </div>
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user_zip" placeholder="xxx-xxx">
+            
+        </fieldset>
+        </div>
+        <div class="border-top">
+        <fieldset id="newsletter_format">
+            
+            <legend>Newsletter</legend>
+            <div class="three-col">
+            <p>Select the newsleter you would like to receive</p>
+            
+            <input type="checkbox" value="html_news" id="html_news" name="news_type">
+            <label for="html_news"><span>HTML News</span></label>
+            <br>
+            <input type="checkbox" value="css_news" id="css_news" name="news_type">
+            <label for="css_news"><span>CSS News</span></label>
+            <br>
+            <input type="checkbox" value="js_news" id="js_news" name="news_type">
+            <label for="js_news"><span>Javascript News</span></label>
+            </div>
+            <div class="clearfix">
+            <div class="three-col two-col">
+            <p>Newsletter format</p>
+            
+            <input type="radio" value="html_format" id="html_format" name="format">
+            <label for="html_format"><span>HTML</span></label>
+            <br>
+            <input type="radio" value="plain_format" id="plain_format" name="format">
+            <label for="plain_format"><span>Plain text</span></label>
+            </div>
+            <div class="three-col two-col">
+             <p>Frequency</p>
+            
+            <input type="radio" value="daily_freq" id="daily_freq" name="frequency">
+            <label for="daily_freq"><span>Daily</span></label>
+            <br>
+            <input type="radio" value="weekly_freq" id="weekly_freq" name="frequency">
+            <label for="weekly_freq"><span>Weekly</span></label>
+            </div>
+            </div>
+            <br>
+            <label for="suggestion">Other topics you'd like to hear about</label>
+            <textarea id="suggestion" name="user_suggestion"></textarea>
+            
+        </fieldset>
+        </div>
+        <button type="submit">Sign Up</button>
+        
+    </form>
+    
+    <footer>
+    
+        <p>Copyright The Code Review</p>
+    
+    </footer>
+</body>
+</html>
